@@ -139,10 +139,10 @@ body{
     width: 320px;
     height: 3500px;
     border-radius: 200px/2200px;
+    position: absolute;
+    bottom: 0;
     background: #990513;
     border: 2px solid black;
-    bottom: 0;
-    position: absolute;
     overflow: hidden;
 }
 .lowerLip::after{
@@ -157,26 +157,14 @@ body{
     border-radius: 80px;
 }
 
-/*  皮卡丘完成了～ */
+/*   最后，让我们的皮卡丘眨眨眼睛！ */
 
-
-/*   最后，让我们的皮卡丘动起来！ */
-
-@keyframes blink {
-    0%, 2%, 60%, 62%, 100% {
-        -webkit-transform: scaleX(1) scaleY(1);
-        transform: scaleX(1) scaleY(1);
-    }
-    1%, 61% {
-        -webkit-transform: scaleX(1.5) scaleY(0.1);
-        transform: scaleX(1.5) scaleY(0.1);
-    }
-}
-
-/*  眨眨眼睛！ */
 
 .upper-face > *{
     animation: blink forwards infinite 8s ease-in-out;
 }
+
+/*  皮卡丘完成了～ */
+
  `;
 }();
